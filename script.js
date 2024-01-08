@@ -17,16 +17,18 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
-// initialize buttons
+// Initialized buttons
 
 button1.onclick = goStore();
 button2.onclick = goCave();
 button3.onclick = fightDragon();
 
-// initialize onClick() events
+// Initialized onClick() events
 
 function goStore() {
-    console.log("Going to store.");
+    button1.onclick = buyHealth;
+    button2.onclick = buyWeapon;
+    button3.onclick = goTown;
 }
 
 function goCave() {
@@ -36,3 +38,5 @@ function goCave() {
 function fightDragon() {
     console.log("Fighting dragon.");
 }
+
+// Declared functions for buttons 1-2-3
